@@ -124,6 +124,10 @@ nav ul li a{
 }
 .footer__Index{
     background-image: url("../Images/Negro2.jpg");
+    color: #ffff;
+}
+.boton_inicio{
+   margin-top: 0%;
 }
 @media (max-width: 480px) {
     #grilla {
