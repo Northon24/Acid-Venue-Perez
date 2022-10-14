@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/estilos.css"> 
+    <meta name="description" content="Sitio web dedicado a la musica electronica, con mayor enfasis en techno">
+    <meta name="keywords" content="musica, electronica, techno, banda, acid, venue, drumcode, cancion, disco, discografia">
+    <meta name="author" content="Jose Perez">
+    <meta name="robots" content="index"/>
+    <link rel="stylesheet" href="./styles/estilos.css"> 
     <!-- Link a Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- Link Google fonts -->
@@ -18,32 +22,35 @@
 </head>
 <body>
     <!-- Encabezado-->
-    <header>
+  <header>
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Acid Venue</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <div class="container-fluid text-white">
+           <h1>Acid Venue</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="pages/drumcode.html">Drumcode</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="pages/filth-On-Acid.html">Filth On Acid</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="pages/klockworks.html">Klockworks</a>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+               <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="pages/drumcode.html">Drumcode</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="pages/filth-On-Acid.html">Filth On Acid</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="pages/klockworks.html">Klockworks</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="pages/r-Label-Group.html">R Label Group</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="pages/trip.html">трип</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="sass.html">SASS</a>
               </li>
             </ul>
           </div>
@@ -71,7 +78,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="images/filth.jpg" class="d-block w-100" alt="filthonacid">
+        <img src="images/drumcode2.jpg" class="d-block w-100" alt="filthonacid">
         <div class="carousel-caption d-none d-md-block">
           <h5>FILTH ON ACID</h5>
           <p>El sello Filth on Acid funciona como plataforma para la libertad artística y creativa de Reinier Zonneveld, desde el sucio techno ácido hasta pistas melódicas más profundas, desde colaboraciones con algunos de los productores más respetados.</p>
@@ -157,40 +164,26 @@
 <div class="row">
 <div class="col-md-12">
 <section class="mb-4 ">
-    <!--Section heading-->
     <h2 class="h1-responsive font-weight-bold text-center my-4 text-white">Contacto</h2>
-    <!--Section description-->
     <p class="text-center w-responsive mx-auto mb-5 text-white">¿Tiene usted alguna pregunta? Por favor, no dude en contactarnos directamente. Nuestro equipo le responderá dentro de
     unas horas para ayudarte</p>
     <div class="row">
-        <!--Grid column-->
         <div class="col-md-9 mb-md-0 mb-5">
             <form id="contact-form" name="contact-form" action="" method="">
-
-                <!--Grid row-->
                 <div class="row">
-
-                    <!--Grid column-->
                     <div class="col-md-6">
                         <div class="md-form mb-0 text-white">
                             <input type="text" id="name" name="name" class="form-control">
                             <label for="name" class="">Tu Nombre</label>
                         </div>
                     </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
                     <div class="col-md-6 text-white">
                         <div class="md-form mb-0">
                             <input type="text" id="email" name="email" class="form-control">
                             <label for="email" class="">Tu Email</label>
                         </div>
                     </div>
-                    <!--Grid column-->
                 </div>
-
-
-                <!--Grid row-->
                 <div class="row">
                     <div class="col-md-12 text-white">
                         <div class="md-form mb-0">
@@ -199,14 +192,8 @@
                         </div>
                     </div>
                 </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
                 <div class="row">
-
-                    <!--Grid column-->
                     <div class="col-md-12">
-
                         <div class="md-form text-white">
                             <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
                             <label for="message">Deja tu mensaje aqui</label>
@@ -214,16 +201,12 @@
 
                     </div>
                 </div>
-                <!--Grid row-->
             </form>
             <div class="text-center text-md-left">
                 <button type="button" class="btn btn-outline-dark">Enviar</button>
             </div>
             <div class=""></div>
         </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
         <div class="col-md-3 text-center text-white">
             <ul class="list-unstyled mb-0">
                 <li><i class="fas fa-map-marker-alt fa-2x"></i>
@@ -239,8 +222,6 @@
                 </li>
             </ul>
         </div>
-        <!--Grid column-->
-
     </div>
 
 </section>

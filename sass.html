@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilos.css"> 
+    <meta name="description" content="Sitio web dedicado a la musica electronica, con mayor enfasis en techno">
+    <meta name="keywords" content="musica, electronica, techno, banda, acid, venue, drumcode, cancion, disco, discografia">
+    <meta name="author" content="Jose Perez">
+    <meta name="robots" content="index"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <link rel="stylesheet" href="css/index.css">
+    <title>Tarea SASS II</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header-nav"> <!-- bloque -->
+            <ul class="header-nav__lista">
+                <li class="header-nav__item">
+                    <a class="header-nav__link" href="">Inicio</a>
+                </li>
+                <li class="header-nav__item">
+                    <a class="header-nav__link" href="">Discos</a>
+                </li>
+                <li class="header-nav__item">
+                    <a class="header-nav__link" href="">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="sectionUno">
+            <aside class="aside">   <!-- bloque -->
+                <h2 class="aside__subti">Nuevos Discos</h2>
+                <ul class="aside__lista">
+                    <li class="aside__item">cancion#1</li>
+                    <li class="aside__item">cancion#2</li>
+                    <li class="aside__item">cancion#3</li>
+                    <li class="aside__item">cancion#4</li>
+                    <li class="aside__item">cancion#5</li>
+                    <li class="aside__item">cancion#6</li>
+                    <li class="aside__item">cancion#7</li>
+                    <li class="aside__item">cancion#8</li>
+                </ul>
+            </aside>
+            <div class="sectionUno-div"> <!-- bloque -->
+                <h2 class="sectionUno-div__subti">¡ Nuevo Lanzamiento !</h2>
+                <img class="sectionUno-div__img" src="images/klock.jpg" alt="">
+                <h3 class="sectionUno-div__subti">HI -LO</h3>
+                <p class="sectionUno-div__parra">Amelie Lens</p>
+            </div>
+        </section>
+
+        <section class="sectionDos">    <!-- bloque -->
+            <div class="sectionDos-divSubti">
+                <h2 class="sectionDos__subti">Mas Escuchadas</h2>
+            </div>
+            <div class="sectionDos-divSucur">
+                <div class="caja"> <!-- bloque -->
+                    <h3 class="caja__h3">Rave - Sam Paganini (Adam Beyer & Layton Giordani)</h3>
+                    <img class="caja__img" src="images/klockworks.jpg" alt="">
+                    <a class="caja__button caja__button--blue" href="">Reproducir</a>
+                </div>
+                <div class="caja"> <!-- bloque -->
+                    <h3 class="caja__h3">All His Desicions</h3>
+                    <img class="caja__img" src="images/klock5.jpg" alt="">
+                    <a class="caja__button caja__button--red" href="">Reproducir</a>
+                </div>
+                <div class="caja"> <!-- bloque -->
+                    <h3 class="caja__h3">Full Of Fire</h3>
+                    <img class="caja__img" src="images/klock6.jpg" alt="">
+                    <a class="caja__button caja__button--cyan" href="">Reproducir</a>
+                </div>
+            </div>    
+            
+        </section>
+
+        <section class="form"> <!-- bloque -->
+            <form action="" method="GET">
+
+                <div clas="form__item">
+                    <label class="form__label" for="name">Nombre:</label>
+                    <input type="text" name="name" placeholder="tu nombre" required>
+                </div>
+                <div class="form__item">
+                    <label class="form__label" for="cel">Celular:</label>
+                    <input type="text" name="cel" placeholder="tu celular" required>
+                </div>
+                <div class="form__item">
+                    <h3>Dejanos tu consulta/comentario</h3>
+                    <label class="form__label" for="note">Nota:</label>
+                    <br>
+                    <textarea name="note" cols="30" rows="5" placeholder="Ejemplo: Ultimas Canciones"></textarea>
+                </div>
+                <br>
+                <input class="form__button" type="submit" value="Enviar">
+                <input class="form__button" type="reset" value="Vaciar todo">
+            </form>
+        </section>
+        </section>
+    </main>
+
+    <footer class="footer"> <!-- bloque -->
+            <p class="footer__parra">Copyright 2022 Jose Perez.</p>
+            <div>
+                <ul class="footer__lista">
+                    <li class="footer__item">Instagram</li>
+                    <li class="footer__item">Facebook</li>
+                    <li class="footer__item">Mail</li>
+                </ul>
+            </div>
+            
+    </footer>
+</body>
+</html>
