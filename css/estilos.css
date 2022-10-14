@@ -1,0 +1,56 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../Images/Negro1.jpg");
+}
+
+h3 {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+
+h4 {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+
+h2 {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.navbar {
+  background-image: url("../Images/Negro2.jpg") !important;
+}
+
+a {
+  color: #fff !important;
+}
+
+.navbar {
+  background-image: url("../Images/Negro2.jpg") !important;
+}
+
+.imagen:hover {
+  filter: grayscale(80%);
+}
+
+/*# sourceMappingURL=estilos.css.map */

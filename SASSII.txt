@@ -1,0 +1,11 @@
+Sass
+- Se creo un nuevo archivo html (sass.html) en donde esta contenido todo lo relacionado con sass y a su vez tiene una hoja de estilo propio.
+
+SEO
+- Agregué un meta-description sobre el sitio.
+- Agregué un meta con keywords.
+- Agregué un meta con author y otro con robots para indicar que quiero ser indexado.
+- Agregué un meta para el control de la memoria caché, ya que mi contenido de noticias
+se va actualizar constantemente.
+- Agregué un Title que describa exacta la página.
+- Modifiqué los titles de los demás archivos HTML.

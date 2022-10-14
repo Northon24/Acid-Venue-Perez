@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+$colorHeadYFoot: rgb(78, 74, 74);
+
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    background-color: $colorHeadYFoot;
+    height: 40px;
+
+    &-nav {
+        padding-top: 10px;
+    }
+
+    &-nav__lista {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    &-nav__link {
+        color: white;
+        text-decoration: none;
+    }
+    &-nav__item {
+        list-style-type: none;
+    }
+}
+
+/* main Section Uno */
+
+.sectionUno {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.aside {
+        width: 30%;
+        background-color: rgb(34, 32, 32);
+        padding: 30px;
+
+        &__subti {
+            color: white;
+        }
+
+        &__lista {
+            padding-top: 10px;
+            line-height: 45px;
+        }
+
+        &__item {
+            color: whitesmoke;
+        }
+    }
+
+.sectionUno-div {
+    background-color: black;
+    text-align: center;
+    width: 70%;
+
+    &__img {
+        max-width: 300px;
+    }  
+
+    &__subti {
+        color: white;
+        padding: 5px;
+    }
+
+    &__parra {
+        text-transform: uppercase;
+    }
+}
+
+/* Main section dos */
+
+.sectionDos {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+
+    &-divSubti {
+        text-align: center;
+    }
+
+    &__subti {
+        padding-bottom: 20px;
+    }
+
+    &-divSucur {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+}
+
+$ancho: 250px;
+$alto: 250px;
+
+.caja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__img {
+        width: $ancho;
+        height: $alto;
+        }
+
+    &__button {
+        width:fit-content;
+        border: black solid 1.5px;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 5px;
+        }
+    &__h3 {
+        color: white;
+    }
+}
+
+/* Form */
+
+.form {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(104, 92, 92);
+
+    &__item {
+        padding: 10px;
+    }
+
+    &__label {
+        color: white;
+    }
+
+    &__button {
+        padding: 5px;
+        border-radius: 5px;
+    }
+}
+
+/* footer */
+
+.footer {
+    background-color: $colorHeadYFoot;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-top: white solid 1px;
+
+    div {
+        width: 40%;
+    }
+    
+    &__lista {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+    &__item {
+        list-style-type: none;
+        color: black;
+    }
+    &__parra {
+        color: white;
+    }
+}
+
+// SASS tarea
+
+
+// SASS tarea - each maps
+
+$colors: rgb(136, 136, 152), rgb(68, 68, 68), rgb(198, 107, 107);
+
+@each $value in $colors {
+    .caja__button--#{$value} {
+        background-color: $value;
+    }
+}
+
+// SASS tarea - for
+
+@for $e from 1 through 3 {
+    .sectionDos a:nth-child(#{$e}) {
+        color: white;
+    }
+}
+
+// SASS tarea - operacionales (multiplicación y resta)
+
+.caja__img:hover {
+
+        width: ($ancho*2)-200;
+        height: ($alto*2)-200;
+     
+}
+// for con if anidado y módulo '%' (calcula pares e impares)
+
+@for $i from 1 through 8 {
+    .aside li:nth-child(#{$i}) {
+        @if ($i%2==0){
+            color: white;
+        }
+        @else {
+            color: rgb(49, 82, 62);
+        }
+    }
+}
+
+
+// Mixins que se ejecutan al achicar la pantalla
+
+@mixin display($display, $flexdir, $justify) {
+    display: $display;
+    flex-direction: $flexdir;
+    justify-content: $justify;
+}
+
+@media screen and (max-width: 500px) {
+    .main, .sectionUno, .sectionDos, .sectionDos-divSucur{
+        @include display(flex, column, center)
+    }
+
+    .aside, .sectionUno, .sectionUno-div {
+        width: 100%;
+    }
+    
+}
+
+
